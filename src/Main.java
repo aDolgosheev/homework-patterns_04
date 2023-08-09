@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         //Liskov substitution principle - наследники класса Product полностью играют роль предка
         List<Product> productsInStock = new ArrayList<>(Arrays.asList(new Jeans(), new Lemon(), new Meat(), new MobilePhone(), new Potato(), new Skirt(), new Water()));
-        //принцип DRY - повторяющийся вывод списка продуктов на экран выносим в отдельный метод
+        //принцип DRY - вывод списка продуктов на экран выносится в цикл в отдельном методе
         printProductsInStock(productsInStock);
         List<Product> basket = createBasket(productsInStock);
         printProductsInStock(productsInStock);
